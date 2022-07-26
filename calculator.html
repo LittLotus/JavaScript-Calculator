@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scientific Calcultor</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+    <div class="container">
+      
+        <h4>JavaScript Calcultor</h4>
+      
+      <div class="calculator-buttons">
+        <div class="display" id="display"></div>
+        <div class="btn">
+          <button onclick="clearAll()" class="Ac">AC</button>
+          <button onclick="deleete()">DEL</button>
+          <button onclick="add()">+</button>
+          <button class="number" onclick="number()" id="one">1</button>
+          <button class="number" onclick="number()">2</button>
+          <button class="number" onclick="number()">3</button>
+          <button onclick="mutiply()">*</button>
+          <button class="number" onclick="number()">4</button>
+          <button class="number" onclick="number()">5</button>
+          <button class="number"onclick="number()">6</button>
+          <button  onclick="divide()">/</button>
+          <button class="number" onclick="number()">7</button>
+          <button class="number" onclick="number()">8</button>
+          <button class="number" onclick="number()">9</button>
+          <button onclick="subtract()">-</button>
+          <button onclick="addPoint()">.</button>
+          <button class="number" onclick="number()">0</button>
+          <button class="equal" onclick="equalTo()">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
