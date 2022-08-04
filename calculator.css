@@ -2,35 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 body {
-  position: relative;
+  display: grid;
+  place-items: center;
 }
 
-h4{
-    padding: 1em;
-    background-color: rgb(216, 63, 188);
-    color: white;
+h4 {
+  padding: 1em;
+  background-color: rgb(216, 63, 188);
+  color: white;
 }
-#display{
-    font-size: 20px;
-    height: 2em;
-    text-align: right;
+#display {
+  font-size: 20px;
+  height: 2em;
+  text-align: right;
+  overflow-x: scroll;
+}
+#display::-webkit-scrollbar{
+display: block;
+height: 3px;
 }
 .container {
-  margin-top: 10em;
   text-align: center;
-  position: absolute;
-  top: 50%;
+  width: 20%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   background-color: rgb(250, 245, 239);
-border-radius: 10px;
-padding: 15px;
-box-shadow: 2px 4px 4px grey;
-
-  /* display: grid;
-place-items: center; */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 4px 4px grey;
 
   /* display: flex;
 justify-content: center;
@@ -47,16 +50,15 @@ button {
   padding: 8px;
   background-color: rgb(249, 220, 249);
   border: 1px solid rgb(253, 167, 253);
-  cursor:pointer;
+  cursor: pointer;
   box-shadow: 0 4px 3px grey;
-
 }
-button:hover{
+button:hover {
   background-color: rgb(235, 78, 196);
   color: white;
 }
 
-.Ac {
+#Ac {
   grid-column: 1/3;
 }
 
