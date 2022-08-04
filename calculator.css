@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 100%;
+  
 }
 body {
   display: grid;
@@ -19,14 +19,17 @@ h4 {
   height: 2em;
   text-align: right;
   overflow-x: scroll;
+ 
 }
 #display::-webkit-scrollbar{
 display: block;
 height: 3px;
 }
-.container {
+div.container {
+  height: 100%;
+  
   text-align: center;
-  width: 20%;
+  
   /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
@@ -39,12 +42,16 @@ height: 3px;
 justify-content: center;
 align-items: center; */
 }
+.calculator-buttons{
+width: 100%;
+
+}
 .btn {
   display: grid;
   grid-template-rows: auto auto auto auto auto;
   grid-template-columns: auto auto auto auto;
-
   gap: 2px;
+  width: 100%;
 }
 button {
   padding: 8px;
@@ -64,4 +71,12 @@ button:hover {
 
 .equal {
   grid-column: 3/5;
+}
+
+@media screen and (max-width:600px) {
+  .container , .calculator-buttons{
+    width: 100%;
+    
+
+  }
 }
